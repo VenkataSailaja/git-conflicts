@@ -7,7 +7,7 @@ config.load_kube_config()
 v1 = client.CoreV1Api()
 
 # List pods in default namespace
-pods = v1.list_namespaced_pod(namespace="default1")
+pods = v1.list_namespaced_pod(namespace="default")
 
 print("Pods in default namespace:")
 
