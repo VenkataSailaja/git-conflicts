@@ -9,7 +9,7 @@ v1 = client.CoreV1Api()
 # List pods in default namespace
 pods = v1.list_namespaced_pod(namespace="default")
 
-print("my changes")
+print("Pods in default namespace")
 
 for pod in pods.items:
     print(pod.metadata.name)
